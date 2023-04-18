@@ -4,9 +4,9 @@ import {MdCompress,MdOutlineWaterDrop} from 'react-icons/md';
 import './weatherDetails.css';
 
 
-const Weatherdetails = ({ weather, units }) => {
-  const tempUnit = units === "metric" ?  "°C" : "°F";
-  const windUnit = units === "metric" ? "m/s" : "m/h";
+const Weatherdetails = ({ weather, unit }) => {
+  const tempUnit = unit === "metric" ?  "°C" : "°F";
+  const windUnit = unit === "metric" ? "m/s" : "m/h";
 
   const cards = [
     {

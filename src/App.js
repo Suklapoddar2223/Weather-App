@@ -56,7 +56,7 @@ function App() {
              type='text' 
              name='city' 
              placeholder='Enter City ...'/>
-            <button onClick={(e)=>{handleUnitClick(e)}}>°F</button>
+            <button onClick={(e)=>{handleUnitClick(e)}}>°{unit === 'metric' ? 'F' : 'C'}</button>
           </div>
           <div className='section section__temparature'>
             <div className='icon'>
